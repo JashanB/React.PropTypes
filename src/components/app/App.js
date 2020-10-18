@@ -3,7 +3,9 @@ import './App.css';
 import Display from '../display';
 
 function App() {
-  const displayNum = 'bobb';
+  const displayNum = {
+    number: 2
+  };
 
   return (
     <div className="App">

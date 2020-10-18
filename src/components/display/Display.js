@@ -1,17 +1,24 @@
 import React from 'react';
 import './Display.css';
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 
-export default function Display (props) {
-  const newNum = props.displayNum / 2
+export default function Display(props) {
+  // const newNum = props.displayNum.number
+  // const newNum = props.displayNum / 2
   return (
     <>
-      <p>{newNum}</p>
+      <p>{props.displayNum.number}</p>
     </>
   )
 }
 
+Display.propTypes = {
+  displayNum: PropTypes.shape({
+    number: PropTypes.number.isRequired
+  })
+}
+
 // Display.propTypes = {
-//   displayNum: PropTypes.number
+//   displayNum: PropTypes.number.isRequired
 // }
